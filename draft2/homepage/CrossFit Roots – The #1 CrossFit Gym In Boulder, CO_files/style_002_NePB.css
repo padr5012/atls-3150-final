@@ -1,0 +1,371 @@
+/*
+ Theme Name:   Siteplicity Theme
+ Theme URI:    https://siteplicity.com/
+ Description:  Siteplicity Custom Theme
+ Author:       Team Siteplicity
+ Author URI:   https://siteplicity.com/
+ Template:     zyth
+ Version:      3.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, right-sidebar, responsive-layout
+ Text Domain:  siteplicity-theme
+
+*/
+
+
+
+
+/*-- STYLING - WP BACKEND, WP FRONTEND, ELEMENTS AND THEME PAGE BUILDER --*/
+/*-- STYLING - WP BACKEND, WP FRONTEND, ELEMENTS AND THEME PAGE BUILDER --*/
+/*-- STYLING - WP BACKEND, WP FRONTEND, ELEMENTS AND THEME PAGE BUILDER --*/
+
+/*-- WP FRONTEND - TOOL BAR - (fixes website's navigation spacing when frontend tool bar active) --*/
+.admin-bar.zyth-body .zyth-top-bar {
+    padding-top: 42px;
+}
+
+/*-- WP BACKEND AND WP FRONTEND - TOOL BAR AND SIDEBAR MENU --*/
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap, #wpadminbar ul#wp-admin-bar-root-default > li, .toplevel_page_revslider {
+    background-color: #174069 !important;
+}
+
+#adminmenu li.menu-top:hover, #adminmenu li.opensub>a.menu-top, #adminmenu li>a.menu-top:focus, #adminmenu .wp-submenu, .toplevel_page_revslider.menu-top:hover {
+    background-color: #1f5285 !important;
+}
+
+.toplevel_page_revslider, .toplevel_page_revslider.menu-top:hover {
+	width: 100% !important;
+}
+
+#wpadminbar{
+    background-color: #174069;
+    background: #174069;
+}
+
+#wpadminbar .ab-top-menu > li.hover > .ab-item, #wpadminbar .ab-top-menu > li.menupop.hover > .ab-item, #wpadminbar .ab-top-menu > li:hover > .ab-item, #wpadminbar .ab-top-menu > li > .ab-item:focus, #wpadminbar-nojs .ab-top-menu > li.menupop:hover > .ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus {
+	background: #1f5285 !important;
+}
+
+#wpadminbar .menupop .ab-sub-wrapper {
+	background: #174069;
+}
+
+#wpadminbar .ab-submenu .ab-item, #wpadminbar .quicklinks .menupop ul li a, #wpadminbar .quicklinks .menupop.hover ul li a, #wpadminbar-nojs .quicklinks .menupop:hover ul li a {
+	background-color: #174069;
+}
+
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after,#adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within:after {
+	border-right-color:#174069;
+	opacity: 0;
+}
+
+li#wp-admin-bar-site-name {
+	padding: 0 10px !important;
+}
+
+@media only screen and (min-width: 960px){
+	#adminmenu, #adminmenuback, #adminmenuwrap, .toplevel_page_revslider, #adminmenu li.menu-top:hover, #adminmenu li.opensub>a.menu-top, 	#adminmenu li>a.menu-top:focus, #adminmenu .wp-submenu, .toplevel_page_revslider.menu-top:hover {
+		width: 175px;
+	}
+
+	#wpcontent, #wpfooter {
+    	margin-left: 175px;
+	}
+	
+	.auto-fold .interface-interface-skeleton {
+    	left: 175px;
+	}
+	
+}
+
+
+
+
+
+/*-- USER ROLE VISIBILITY & DISPLAY - WP BACKEND, WP FRONTEND, ELEMENTS AND THEME PAGE BUILDER - ALL USER ROLES (unless user role is excluded in other rule) --*/
+/*-- USER ROLE VISIBILITY & DISPLAY - WP BACKEND, WP FRONTEND, ELEMENTS AND THEME PAGE BUILDER - ALL USER ROLES (unless user role is excluded in other rule) --*/
+/*-- USER ROLE VISIBILITY & DISPLAY - WP BACKEND, WP FRONTEND, ELEMENTS AND THEME PAGE BUILDER - ALL USER ROLES (unless user role is excluded in other rule) --*/
+
+/*-- PAGE SIDEBAR - REVOLUTION SLIDER --*/
+#slider_revolution_metabox {
+display: none !important;
+}
+
+/*-- PAGE BUILDER - WRAPPERS/COLUMNS TAB AND ELEMENTS TAB (page builder head) --*/
+.gdlr-core-page-builder-head-nav-item[data-nav-type="wrapper"], .gdlr-core-page-builder-head-content-wrapper.gdlr-core-active[data-content-type="wrapper"], .gdlr-core-page-builder-head-nav-item[data-nav-type="element"] {
+	display: none !important;
+}
+
+/*-- PAGE BUILDER - (DEFAULT THEME) TEMPLATES TAB (page builder head) --*/
+.gdlr-core-page-builder-head-nav-item[data-nav-type="template"] {
+	display: none !important;
+}
+
+/*-- PAGE BUILDER - SAVED CUSTOM TEMPLATES AND SAVED SYNCED TEMPLATES (delete button visibility for saved custom templates or saved synced templates) --*/
+.gdlr-core-page-builder-head-content-custom-template-remove, .gdlr-core-page-builder-head-content-sync-template-remove {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/*-- PAGE BUILDER - SAVE CUSTOM TEMPLATE BUTTONS (page builder wrappers, columns and elements) --*/
+.gdlr-core-page-builder-wrapper-save, .gdlr-core-page-builder-column-save, .gdlr-core-page-builder-item-save {
+	display: none !important;
+}
+
+/*-- PAGE BUILDER - SYNC TEMPLATE BUTTONS (page builder wrappers) --*/
+.gdlr-core-page-builder-wrapper-sync {
+	display: none !important;
+}
+
+/*-- PAGE BUILDER - SAVE TEMPLATE BUTTON AND RESET TEMPLATE BUTTON (page builder head) --*/
+#gdlr-core-page-builder-head-action-reset, #gdlr-core-page-builder-head-action-save-template {
+    display: none !important;
+}
+
+/*-- PAGE BUILDER - ELEMENTS (page builder head) > INDIVIDUAL ELEMENTS --*/
+.gdlr-core-page-builder-head-content-element-item[data-type="audio"], .gdlr-core-page-builder-head-content-element-item[data-type="breadcrumbs"], .gdlr-core-page-builder-head-content-element-item[data-type="code"], .gdlr-core-page-builder-head-content-element-item[data-type="column-service"], .gdlr-core-page-builder-head-content-element-item[data-type="contact-form-7"], .gdlr-core-page-builder-head-content-element-item[data-type="custom-menu"], .gdlr-core-page-builder-head-content-element-item[data-type="event"], .gdlr-core-page-builder-head-content-element-item[data-type="hover-box"], .gdlr-core-page-builder-head-content-element-item[data-type="hover-content"], .gdlr-core-page-builder-head-content-element-item[data-type="layer-slider"], .gdlr-core-page-builder-head-content-element-item[data-type="master-slider"], .gdlr-core-page-builder-head-content-element-item[data-type="newsletter"], .gdlr-core-page-builder-head-content-element-item[data-type="page-list"], .gdlr-core-page-builder-head-content-element-item[data-type="portfolio"], .gdlr-core-page-builder-head-content-element-item[data-type="price-plan"], .gdlr-core-page-builder-head-content-element-item[data-type="product"], .gdlr-core-page-builder-head-content-element-item[data-type="product-table"], .gdlr-core-page-builder-head-content-element-item[data-type="promo-box"], .gdlr-core-page-builder-head-content-element-item[data-type="revolution-slider"], .gdlr-core-page-builder-head-content-element-item[data-type="social-network"], .gdlr-core-page-builder-head-content-element-item[data-type="social-share"], .gdlr-core-page-builder-head-content-element-item[data-type="text-script"], .gdlr-core-page-builder-head-content-element-item[data-type="twitter"], .gdlr-core-page-builder-head-content-element-item[data-type="type-animation"], .gdlr-core-page-builder-head-content-element-item[data-type="video"], .gdlr-core-page-builder-head-content-element-item[data-type="widget"], .gdlr-core-page-builder-head-content-element-item[data-type="wordpress-editor-content"], .gdlr-core-page-builder-head-content-element-item[data-type="wp-google-map-plugin"] {
+	display: none !important;
+}
+
+/*-- PAGE BUILDER - PAGE OPTIONS (page bulider bottom) --*/
+.gdlr-core-page-option-tab-head-item[data-tab-slug="title"], .gdlr-core-page-option-tab-head-item[data-tab-slug="header"], .gdlr-core-page-option-tab-head-item[data-tab-slug="bullet-anchor"], .gdlr-core-page-option-tab-head-item[data-tab-slug="float-social"], .gdlr-core-page-option-tab-head-item[data-tab-slug="metro-layout"] {
+	display: none !important;
+}
+
+/*-- PAGE BUILDER - PAGE OPTIONS TAB (page bulider bottom) > GENERAL (options) --*/
+#postcustom, #postexcerpt, #authordiv {
+	display: none !important;
+}
+
+/*-- PAGE BUILDER - PAGE OPTIONS TAB (page bulider bottom) > GENERAL (options) > ENABLE FOOTER --*/
+.gdlr-core-html-option-combobox[data-slug="enable-footer"] {
+	display: none !important;
+}
+
+/*-- PAGE BUILDER - PAGE OPTIONS TAB (page bulider bottom) > WP GOOGLE MAP PRO --*/
+#wpgmp_google_map_metabox {
+	display: none !important;
+}
+
+/*-- WP CUSTOM FRONTEND - TOOL BAR (defined for all users, can't be user role specific) --*/
+li#wp-admin-bar-new-content, li#wp-admin-bar-comments, li#wp-admin-bar-revslider, li#wp-admin-bar-customize, li#wp-admin-bar-themes, li#wp-admin-bar-widgets, li#wp-admin-bar-menus, #wp-admin-bar-edit-profile, #wp-admin-bar-user-info {
+    display: none;
+}
+
+/*-- WP BACKEND AND WP FRONTEND - REV SLIDER --*/
+.rsle_tool.exportslider, .rsle_tool.exporthtmlslider, #rs_welcome_header_area, #rs_overview_menu, #plugin_update_row, #plugin_activation_row, #plugin_news_row, #new_slider_from_template, #add_on_management {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/*-- WP BACKEND AND WP FRONTEND - POPUP TOOL --*/
+.pum-notice-bar-wrapper, .pum-alerts {
+	display:none;
+}
+
+.wp-pointer-top, #menu-posts-popup .pum-alert-count, #menu-posts-popup .update-plugins {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/*-- WP BACKEND - THEME OPTIONS - MISCELLANEOUS > IMPORT/EXPORT --*/
+/*-- NOTE: This rule is NOT defined for all users as only Junior Administrator and Administrator user roles have access to this --*/
+
+/*-- WP BACKEND AND WP FRONTEND - THEME OPTIONS > LOGO --*/
+.gdlr-core-theme-option-head-nav .gdlr-core-theme-option-logo img {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+
+
+
+
+/*-- USER ROLE VISIBILITY & DISPLAY - WP BACKEND, WP FRONTEND, ELEMENTS AND THEME PAGE BUILDER - JUNIOR ADMINISTRATOR (excludes user from previous rules) --*/
+/*-- USER ROLE VISIBILITY & DISPLAY - WP BACKEND, WP FRONTEND, ELEMENTS AND THEME PAGE BUILDER - JUNIOR ADMINISTRATOR (excludes user from previous rules) --*/
+/*-- USER ROLE VISIBILITY & DISPLAY - WP BACKEND, WP FRONTEND, ELEMENTS AND THEME PAGE BUILDER - JUNIOR ADMINISTRATOR (excludes user from previous rules) --*/
+
+/*-- PAGE SIDEBAR - REVOLUTION SLIDER --*/
+.role-junior_administrator #slider_revolution_metabox {
+display: none !important;
+}
+
+/*-- PAGE BUILDER - WRAPPERS/COLUMNS TAB AND ELEMENTS TAB (page builder head) --*/
+.role-junior_administrator .gdlr-core-page-builder-head-nav-item[data-nav-type="wrapper"], .role-junior_administrator .gdlr-core-page-builder-head-content-wrapper.gdlr-core-active[data-content-type="wrapper"], .role-junior_administrator .gdlr-core-page-builder-head-nav-item[data-nav-type="element"] {
+	display: inline-block !important;
+}
+
+/*-- PAGE BUILDER - (DEFAULT THEME) TEMPLATES TAB (page builder head) --*/
+.role-junior_administrator .gdlr-core-page-builder-head-nav-item[data-nav-type="template"] {
+	display: none !important;
+}
+
+/*-- PAGE BUILDER - SAVED CUSTOM TEMPLATES AND SAVED SYNCED TEMPLATES (delete button visibility for saved custom templates or saved synced templates) --*/
+.role-junior_administrator .gdlr-core-page-builder-head-content-custom-template-remove, .role-junior_administrator .gdlr-core-page-builder-head-content-sync-template-remove {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/*-- PAGE BUILDER - SAVE CUSTOM TEMPLATE BUTTON (page builder wrappers, columns and elements) --*/
+.role-junior_administrator .gdlr-core-page-builder-wrapper-save, .role-junior_administrator .gdlr-core-page-builder-column-save, .role-junior_administrator .gdlr-core-page-builder-item-save {
+	display: inline-block !important;
+}
+
+/*-- PAGE BUILDER - SAVE SYNC TEMPLATE BUTTON (page builder wrappers) --*/
+.role-junior_administrator .gdlr-core-page-builder-wrapper-sync {
+	display: inline-block !important;
+}
+
+/*-- PAGE BUILDER - SAVE TEMPLATE BUTTON AND RESET TEMPLATE BUTTON (page builder head) --*/
+.role-junior_administrator #gdlr-core-page-builder-head-action-reset, .role-junior_administrator #gdlr-core-page-builder-head-action-save-template {
+    display: inline-block !important;
+}
+
+/*-- PAGE BUILDER - ELEMENTS (page builder head) > INDIVIDUAL ELEMENTS --*/
+.role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="code"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="column-service"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="contact-form-7"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="custom-menu"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="event"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="hover-box"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="hover-content"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="portfolio"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="price-plan"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="promo-box"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="revolution-slider"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="social-share"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="text-script"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="twitter"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="type-animation"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="video"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="widget"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="wordpress-editor-content"], .role-junior_administrator .gdlr-core-page-builder-head-content-element-item[data-type="wp-google-map-plugin"] {
+	display: block !important;
+}
+
+/*-- PAGE BUILDER - PAGE OPTIONS (page bulider bottom) --*/
+.role-junior_administrator .gdlr-core-page-option-tab-head-item[data-tab-slug="title"], .role-junior_administrator .gdlr-core-page-option-tab-head-item[data-tab-slug="header"], .role-junior_administrator .gdlr-core-page-option-tab-head-item[data-tab-slug="bullet-anchor"], .role-junior_administrator .gdlr-core-page-option-tab-head-item[data-tab-slug="float-social"], .role-junior_administrator .gdlr-core-page-option-tab-head-item[data-tab-slug="metro-layout"] {
+	display: block !important;
+}
+
+/*-- PAGE BUILDER - PAGE OPTIONS TAB (page bulider bottom) > GENERAL (options) --*/
+.role-junior_administrator #postcustom, .role-junior_administrator #postexcerpt, .role-junior_administrator #authordiv {
+	display: block !important;
+}
+
+/*-- PAGE BUILDER - PAGE OPTIONS TAB (page bulider bottom) > GENERAL (options) > ENABLE FOOTER --*/
+.role-junior_administrator .gdlr-core-html-option-combobox[data-slug="enable-footer"] {
+	display: block !important;
+}
+
+/*-- PAGE BUILDER - PAGE OPTIONS TAB (page bulider bottom) > WP GOOGLE MAP PRO --*/
+.role-junior_administrator #wpgmp_google_map_metabox {
+	display: block !important;
+}
+
+/*-- WP CUSTOM FRONTEND - TOOL BAR (defined for all users, can't be user role specific) --*/
+/*-- NOTE: This rule is defined for all users above --*/
+
+/*-- WP BACKEND AND WP FRONTEND - REV SLIDER --*/
+.role-junior_administrator .rsle_tool.exportslider, .role-junior_administrator .rsle_tool.exporthtmlslider, .role-junior_administrator #rs_welcome_header_area, .role-junior_administrator #rs_overview_menu, .role-junior_administrator #plugin_update_row, .role-junior_administrator #plugin_activation_row, .role-junior_administrator #plugin_news_row, .role-junior_administrator #new_slider_from_template, .role-junior_administrator #add_on_management  {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/*-- WP BACKEND AND WP FRONTEND - POPUP TOOL --*/
+.role-junior_administrator .pum-notice-bar-wrapper, .role-junior_administrator .pum-alerts {
+	display:none;
+}
+
+.role-junior_administrator .wp-pointer-top, .role-junior_administrator #menu-posts-popup .pum-alert-count, .role-junior_administrator #menu-posts-popup .update-plugins  {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/*-- WP BACKEND - THEME OPTIONS - MISCELLANEOUS > IMPORT/EXPORT --*/
+.role-junior_administrator .gdlr-core-html-option-item.gdlr-core-fullsize.gdlr-core-html-option-export-item {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+/*-- WP BACKEND AND WP FRONTEND - THEME OPTIONS > LOGO --*/
+/*-- NOTE: This rule is defined for all users above --*/
+
+
+
+
+
+/*-- USER ROLE VISIBILITY & DISPLAY - WP BACKEND, WP FRONTEND, ELEMENTS AND THEME PAGE BUILDER - ADMINISTRATOR (excludes user from previous rules) --*/
+/*-- USER ROLE VISIBILITY & DISPLAY - WP BACKEND, WP FRONTEND, ELEMENTS AND THEME PAGE BUILDER - ADMINISTRATOR (excludes user from previous rules) --*/
+/*-- USER ROLE VISIBILITY & DISPLAY - WP BACKEND, WP FRONTEND, ELEMENTS AND THEME PAGE BUILDER - ADMINISTRATOR (excludes user from previous rules) --*/
+
+/*-- PAGE SIDEBAR - REVOLUTION SLIDER --*/
+.role-administrator #slider_revolution_metabox {
+display: block !important;
+}
+
+/*-- PAGE BUILDER - WRAPPERS/COLUMNS TAB AND ELEMENTS TAB (page builder head) --*/
+.role-administrator .gdlr-core-page-builder-head-nav-item[data-nav-type="wrapper"], .role-administrator .gdlr-core-page-builder-head-content-wrapper.gdlr-core-active[data-content-type="wrapper"], .role-administrator .gdlr-core-page-builder-head-nav-item[data-nav-type="element"] {
+	display: inline-block !important;
+}
+
+/*-- PAGE BUILDER - (DEFAULT THEME) TEMPLATES TAB (page builder head) --*/
+.role-administrator .gdlr-core-page-builder-head-nav-item[data-nav-type="template"] {
+	display: inline-block !important;
+}
+
+/*-- PAGE BUILDER - SAVED CUSTOM TEMPLATES AND SAVED SYNCED TEMPLATES (delete button visibility for saved custom templates or saved synced templates) --*/
+.role-administrator .gdlr-core-page-builder-head-content-custom-template-remove, .role-administrator .gdlr-core-page-builder-head-content-sync-template-remove {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/*-- PAGE BUILDER - CUSTOM TEMPLATE BUTTON (page builder wrappers, columns and elements) --*/
+.role-administrator .gdlr-core-page-builder-wrapper-save, .role-administrator .gdlr-core-page-builder-column-save, .role-administrator .gdlr-core-page-builder-item-save {
+	display: inline-block !important;
+}
+
+/*-- PAGE BUILDER - SYNC TEMPLATE BUTTON (page builder head wrappers) --*/
+.role-administrator .gdlr-core-page-builder-wrapper-sync {
+	display: inline-block !important;
+}
+
+/*-- PAGE BUILDER - SAVE TEMPLATE BUTTON AND RESET TEMPLATE BUTTON (page builder head) --*/
+.role-administrator #gdlr-core-page-builder-head-action-reset, .role-administrator #gdlr-core-page-builder-head-action-save-template {
+    display: inline-block !important;
+}
+
+/*-- PAGE BUILDER - ELEMENTS (page builder head) > INDIVIDUAL ELEMENTS --*/
+.role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="audio"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="breadcrumbs"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="code"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="column-service"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="contact-form-7"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="custom-menu"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="event"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="hover-box"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="hover-content"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="layer-slider"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="master-slider"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="newsletter"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="page-list"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="portfolio"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="price-plan"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="product"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="product-table"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="promo-box"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="revolution-slider"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="social-network"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="social-share"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="text-script"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="twitter"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="type-animation"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="video"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="widget"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="wordpress-editor-content"], .role-administrator .gdlr-core-page-builder-head-content-element-item[data-type="wp-google-map-plugin"] {
+	display: block !important;
+}
+
+/*-- PAGE BUILDER - PAGE OPTIONS (page bulider bottom) --*/
+.role-administrator .gdlr-core-page-option-tab-head-item[data-tab-slug="title"], .role-administrator .gdlr-core-page-option-tab-head-item[data-tab-slug="header"], .role-administrator .gdlr-core-page-option-tab-head-item[data-tab-slug="bullet-anchor"], .role-administrator .gdlr-core-page-option-tab-head-item[data-tab-slug="float-social"], .role-administrator .gdlr-core-page-option-tab-head-item[data-tab-slug="metro-layout"] {
+	display: block !important;
+}
+
+/*-- PAGE BUILDER - PAGE OPTIONS TAB (page bulider bottom) > GENERAL (options) --*/
+.role-administrator #postcustom, .role-administrator #postexcerpt, .role-administrator #authordiv {
+	display: block !important;
+}
+
+/*-- PAGE BUILDER - PAGE OPTIONS TAB (page bulider bottom) > GENERAL (options) > ENABLE FOOTER --*/
+.role-administrator .gdlr-core-html-option-combobox[data-slug="enable-footer"] {
+	display: block !important;
+}
+
+/*-- PAGE BUILDER - PAGE OPTIONS TAB (page bulider bottom) > WP GOOGLE MAP PRO --*/
+.role-administrator #wpgmp_google_map_metabox {
+	display: block !important;
+}
+
+/*-- WP CUSTOM FRONTEND - TOOL BAR (defined for all users, can't be user role specific) --*/
+/*-- NOTE: This rule is defined for all users above --*/
+
+/*-- WP BACKEND AND WP FRONTEND - REV SLIDER --*/
+.role-administrator .rsle_tool.exportslider, .role-administrator .rsle_tool.exporthtmlslider, .role-administrator #rs_welcome_header_area, .role-administrator #rs_overview_menu, .role-administrator #plugin_update_row, .role-administrator #plugin_activation_row, .role-administrator #plugin_news_row, .role-administrator #new_slider_from_template, .role-administrator #add_on_management {
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+/*-- WP BACKEND AND WP FRONTEND - POPUP TOOL --*/
+.role-administrator .pum-notice-bar-wrapper, .role-administrator .pum-alerts {
+	display:none;
+}
+
+.role-administrator .wp-pointer-top, .role-administrator #menu-posts-popup .pum-alert-count, .role-administrator #menu-posts-popup .update-plugins {
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+/*-- WP BACKEND - THEME OPTIONS - MISCELLANEOUS > IMPORT/EXPORT --*/
+/*-- NOTE: This rule is NOT defined for all users as only Junior Administrator and Administrator user roles have access to this and Administrator should not be blocked --*/
+
+/*-- WP BACKEND AND WP FRONTEND - THEME OPTIONS > LOGO --*/
+/*-- NOTE: This rule is defined for all users above --*/
+
