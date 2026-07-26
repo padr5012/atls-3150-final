@@ -153,6 +153,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     outline: 3px solid #0a58ca !important;
     outline-offset: 2px;
   }
+
+  /* These lines move the containers back in the z direction so the outline box can be visible */
+  .zyth-top-bar-container-inner { z-index: 0; }
+  .zyth-top-bar-right-button .zyth-top-bar-button:before { z-index: -1; }
 </style>
 
 </head>
@@ -370,7 +374,6 @@ Call us: <a href="tel:303-578-8455" onClick="fbq('track', 'Phone_Contact', {phon
 	    value=""
 	    size="40"
 	    autocomplete="off"
-	    tabindex="1000"
     /></span>
 </div>
 

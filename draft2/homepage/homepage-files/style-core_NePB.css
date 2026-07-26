@@ -8246,8 +8246,3 @@ span.wpcf7-form-control-wrap[data-name^="checkbox"] .wpcf7-list-item-label{ disp
 .wpcf7 form .wpcf7-response-output {
     width: 50%;
 }
-
-*:focus-visible {
-  outline: 3px solid #0a58ca !important;
-  outline-offset: 2px;
-}
