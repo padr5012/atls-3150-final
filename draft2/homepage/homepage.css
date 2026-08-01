@@ -30,6 +30,10 @@
   }
 }
 
+.field-label {
+  color: white;
+}
+
 /* Styles first image to mimic old website */
 .atls-image {
   position: relative;
