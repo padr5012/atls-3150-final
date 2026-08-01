@@ -20,6 +20,7 @@
 .g-policy-block .g-policy-links { color: #000;}
 
 
+/* Override the mobile styles so the  */
 @media (max-height:450px){
   .zyth-mobile-header-wrap .zyth-top-bar{
     position:static!important
