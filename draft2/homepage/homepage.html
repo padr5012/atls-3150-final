@@ -7,6 +7,12 @@
 	<link rel="pingback" href="https://crossfitroots.com/xmlrpc.php">
 	<title>CrossFit Roots &#8211; The #1 CrossFit Gym In Boulder, CO</title>
 <meta name='robots' content='max-image-preview:large' />
+
+
+<!-- Modify styles for for final project -->
+<link rel="stylesheet" href="homepage.css">
+
+
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel="alternate" type="application/rss+xml" title="CrossFit Roots &raquo; Feed" href="https://crossfitroots.com/feed/" />
 <link rel="alternate" type="application/rss+xml" title="CrossFit Roots &raquo; Comments Feed" href="https://crossfitroots.com/comments/feed/" />
@@ -146,111 +152,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		.club-gradient{background:-webkit-linear-gradient(45deg,#fde501 0%,#ff5287 50%,#d72400 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 /*# sourceURL=rs-plugin-settings-inline-css */
 </style>
-
-
-
-
-
-<!-- Added styles for final project -->
-<style>
-
-	/* Focus outlining */
-
-	*:focus-visible {
-	outline: 3px solid #0a58ca !important;
-	outline-offset: 2px;
-	}
-
-	/* These lines move the containers back in the z direction so the outline box can be visible */
-	.zyth-top-bar-container-inner { z-index: 0; }
-	.zyth-top-bar-right-button .zyth-top-bar-button:before { z-index: -1; }
-
-	/* This fixes the contrast issue when the color was grey against the orange background or the changing gradient (From "Free Intro" Button) */
-	.g-policy-block {
-		color: #000;
-		opacity: 1;
-		display: flex;
-		justify-content: center;
-	}
-	.g-policy-block .g-policy-links { color: #000;}
-
-
-
-
-
-	/* Styles first image to mimic old website */
-
-	.atls-image {
-	  position: relative;
-	  background-image: url('homepage-files/bg-slider2.jpg');
-	  background-size: cover;
-	  width: 100%;
-	  height: 100vh;
-
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  justify-content: center;
-	}
-
-	#atls-overlay {
-	  /* position: absolute; */
-	  color: white;
-	  font-size: 70px;
-	  z-index: 99;
-		text-align: center;
-	}
-
-	#atls-2 {
-		font-size: 96px;
-		font-weight: extrabold;
-	}
-
-	#atls-button {
-	  background-color: #fff;
-	  color: #000;
-	  padding: 12px 30px;
-	  border: none;
-	  font-size: 20px;
-	  font-weight: 600;
-	  cursor: pointer;
-	  transition: all 0.3s ease;
-	}
-	#atls-button:hover {
-	  background-color: #bbb;
-	  transform: scale(1.05);
-	}
-
-
-
-	/* Set paragraph line lengths to 80 characters as recommended by the WCAG */
-	p {
-		max-width: 65ch;
-	}
-
-
-	/* Prevent Upcoming Events paragraph from stretching out */
-	#atls-upcoming-events-container {
-		max-width: 1600px;
-	}
-
-	/* Prevent "Demand More..." section from stretching out */
-	#atls-boxes-container {
-		max-width: 1600px;
-	}
-
-	/* Narrow and center signup form */
-	.atls-form {
-		max-width: 1000px;
-	}
-
-	.atls-form-parent {
-		display: flex;
-		justify-content: center;
-	}
-</style>
-
-
 
 
 
