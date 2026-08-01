@@ -20,8 +20,14 @@
 .g-policy-block .g-policy-links { color: #000;}
 
 
-
-
+@media (max-height:450px){
+  .zyth-mobile-header-wrap .zyth-top-bar{
+    position:static!important
+  }
+  .zyth-mobile-header{
+    padding-top:8px!important
+  }
+}
 
 /* Styles first image to mimic old website */
 .atls-image {
